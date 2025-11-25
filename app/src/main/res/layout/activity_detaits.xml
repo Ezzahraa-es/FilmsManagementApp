@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie Title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FFC107"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Genre -->
+        <TextView
+            android:id="@+id/tvDetailGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre: Action"
+            android:textSize="20sp"
+            android:textColor="#F6E2A7"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Stars Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating:"
+            android:textSize="20sp"
+            android:textColor="#F6E2A7"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Stars Layout -->
+        <LinearLayout
+            android:id="@+id/starsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="25dp">
+
+        </LinearLayout>
+
+        <!-- Watched or not -->
+        <TextView
+            android:id="@+id/tvWatchedState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Film already watched"
+            android:textSize="18sp"
+            android:textColor="#333"
+            android:layout_marginBottom="35dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Delete Movie"
+            android:padding="10dp"
+            android:textColor="#070707"
+            android:backgroundTint="#FFC107"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#000000">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD MOVIE"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFC107"
+            android:paddingBottom="20dp" />
+
+        <!-- Movie Title Input -->
+        <EditText
+            android:id="@+id/etMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter movie title"
+            android:padding="12dp"
+            android:textColor="#EFD392"
+            android:textColorHint="#EFD392"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Genre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre:"
+            android:textSize="18sp"
+            android:textColor="#FFC107"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+
+            android:layout_marginBottom="20dp" />
+
+        <!-- Rating -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating:"
+            android:textSize="18sp"
+            android:textColor="#FFC107"
+            android:layout_marginBottom="8dp" />
+
+        <!-- ⭐ Five Stars using ImageView -->
+        <LinearLayout
+            android:id="@+id/llStars"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:padding="6dp" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:padding="6dp" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:padding="6dp" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:padding="6dp" />
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:padding="6dp" />
+        </LinearLayout>
+
+
+        <!-- Already Watched -->
+        <Switch
+            android:id="@+id/switchWatched"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already watched"
+            android:textSize="16sp"
+            android:textColor="@color/myColor"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Favorite -->
+        <CheckBox
+            android:id="@+id/checkFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite"
+            android:textColor="#EFD392"
+            android:textSize="16sp"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btnAddMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:backgroundTint="#FFC107"
+            android:textColor="#101010"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
