@@ -34,6 +34,14 @@ Un simple clic sur un button dans activite de details permet de le supprimer de 
 
 ## 📸 Captures d’écran 
 
+<img src="screenshots/im1.png" width="250"/>
+
+<img src="screenshots/im2.png" width="250"/>
+
+<img src="screenshots/im3.png" width="250"/>
+
+<img src="screenshots/im4.png" width="250"/>
+
 
 
 
